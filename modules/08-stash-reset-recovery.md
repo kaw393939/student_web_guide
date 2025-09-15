@@ -18,16 +18,25 @@ git stash pop
 
 Deliverable: stash list shows saved stash and `git stash pop` restores changes.
 
+git log --oneline -n 5
+git reset --soft HEAD~1   # keep changes staged
+git reset --mixed HEAD~1  # keep changes in working tree
 2) Undo last commit safely (soft vs mixed vs hard)
+
+Always make a backup branch before running destructive commands:
+
+```bash
+git branch backup-before-reset
+```
 
 ```bash
 git log --oneline -n 5
 git reset --soft HEAD~1   # keep changes staged
 git reset --mixed HEAD~1  # keep changes in working tree
-# git reset --hard HEAD~1 # DANGEROUS: discards changes
+# git reset --hard HEAD~1 # DANGEROUS: discards working tree changes
 ```
 
-Teacher note: explain that `--hard` permanently discards uncommitted changes; always make a backup commit before using `--hard`.
+Teacher note: explain that `--hard` discards local changes. Use `backup-before-reset` to recover if needed.
 
 3) Revert a commit (safe for shared branches)
 
@@ -35,13 +44,16 @@ Teacher note: explain that `--hard` permanently discards uncommitted changes; al
 git revert <commit-sha>
 ```
 
+git reflog --oneline
+git checkout -b recover-branch <sha>
 4) Recover lost commits with reflog
 
 ```bash
 git reflog --oneline
-# find a SHA that had your commit
+# find a SHA that contained the commit you need
 git checkout -b recover-branch <sha>
-# now push or inspect commit
+# inspect the commit, then push if desired
+git log --oneline -n 5
 ```
 
 Deliverable: demonstrate recovering a commit from reflog and creating a branch from it.

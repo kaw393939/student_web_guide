@@ -27,7 +27,23 @@ cat ~/.ssh/id_ed25519.pub
 
 - Copy the output and paste into GitHub → Settings → SSH and GPG keys → New SSH key.
 
-4) Test connection
+
+eval "$(ssh-agent -s)"
+4) Start the SSH agent and add your key (macOS/WSL)
+
+```bash
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+```
+
+WSL copy tip: if you're using WSL2 and need to copy the public key to Windows clipboard, run:
+
+```bash
+cat ~/.ssh/id_ed25519.pub | clip.exe
+# then paste into GitHub's SSH key form on the Windows side
+```
+
+5) Test connection
 
 ```bash
 ssh -T git@github.com
@@ -38,6 +54,7 @@ Expected output: a welcome message that confirms authentication.
 Deliverable: screenshot or pasted success message from `ssh -T git@github.com`.
 
 Teacher notes
-- If students can't add keys due to GitHub account restrictions, use a teacher-provided org repo or fallback to HTTPS with token.
+- If students can't add keys due to GitHub account restrictions, use a teacher-provided org repo or fallback to HTTPS with a personal access token.
+- On Windows, WSL2 sometimes needs `clip.exe` or manual copy to transfer the public key to GitHub — provide instructions for copying the key.
 
 ---

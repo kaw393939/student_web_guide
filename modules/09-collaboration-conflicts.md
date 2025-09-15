@@ -6,11 +6,12 @@ Estimated time: 30–45 minutes
 
 Tasks
 
-1) Fetch and pull
+1) Fetch and pull (safer with rebase)
 
 ```bash
 git fetch origin
-git pull origin main
+# prefer rebasing local changes on top of remote to keep history linear
+git pull --rebase origin main
 ```
 
 2) Create a conflict (simulated)
@@ -22,13 +23,29 @@ git pull origin main
 
 3) Resolve conflict
 
-```bash
-# when merge reports conflict, open file and look for <<<<<<< markers
-# edit to decide final content
-git add <file-with-conflict>
 git commit -m "fix: resolve merge conflict in <file>"
+git rebase --continue
 git push
+```bash
+# when merge/rebase reports conflict, open the file and look for <<<<<<< markers
+# edit to decide final content, remove the markers, then:
+git add <file-with-conflict>
+# if you were merging, finish the merge with a commit
+git commit -m "fix: resolve merge conflict in <file>"
+# if you used rebase, continue the rebase
+git rebase --continue
+git push
+
+# If the rebase is confusing or you want to cancel, run:
+git rebase --abort
+
+# Safety tip: create a backup branch before risky operations
+git branch backup-before-merge
 ```
+
+Quick tips:
+- Run `git status` and `git diff` to inspect conflicts.  
+- If you're unsure, create a backup branch first: `git branch backup-before-merge`.
 
 Deliverable: successfully resolve merge conflict and push merged result.
 

@@ -66,16 +66,19 @@ Example starter paragraph:
 
 > I'm learning web development because I want to make things that help people. I use apps every day and I want to understand how they’re made. This course will help me write and publish my first web content.
 
-5) Commit your work locally (10 minutes)
+5) (Optional now) Save your work with Git (10 minutes)
+
+If you'd like to save your work with Git now, you can initialize a local repository. Otherwise we'll do this in Module 04 to keep initialization consistent across the class.
 
 ```bash
+# only if you want to initialize now
 git init
 git add modules/your-name-intro.md
 git commit -m "docs: add intro article by <your-name>"
 git log --oneline -n 3
 ```
 
-Deliverable: `modules/your-name-intro.md` present and a local commit recorded.
+Deliverable: `modules/your-name-intro.md` present. If you initialized, a local commit is recorded.
 
 Teacher notes
 - Expect many students to need help with WSL installation and VS Code setup. Reserve class time for hands-on setup.

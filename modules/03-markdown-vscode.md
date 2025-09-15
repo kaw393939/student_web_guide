@@ -14,7 +14,23 @@ Tasks
 2) Create your first Markdown article (15–25 minutes)
 
 ```bash
-cd ~/student-projects/what-we-wish-we-knew || cd ./modules
+# if you created the student-projects folder in Module 01
+cd ~/student-projects/what-we-wish-we-knew
+# OR from the repo root
+cd path/to/this/repository
+code .
+```
+
+Open the project folder in VS Code. If you created `student-projects/what-we-wish-we-knew` in Module 01 use that path; otherwise open the repository root.
+
+From the terminal you can run (optional):
+
+```bash
+# go to your project folder
+cd ~/student-projects/what-we-wish-we-knew
+# OR from the repo root
+cd path/to/this/repository
+# open VS Code from the current folder (optional; only if you have VS Code installed)
 code .
 ```
 

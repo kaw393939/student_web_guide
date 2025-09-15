@@ -3,83 +3,48 @@
 # Student Web Developer Guide
 
 Quick TL;DR
-
-Build a short, student-written website while learning the Unix shell, Git (safe workflows), Markdown, basic HTML/CSS/JS, and how to use AI tools responsibly.
-
-Why this course? (Picks → Backhoes)
-
-Young developers often start with "picks and shovels" (phone apps, simple editors) that let you do small tasks. This course teaches the engineering tools (the "backhoes") — the shell, version control, and safe workflows — so you can move more work, more reliably. AI is the productivity multiplier; engineering skills keep you in control.
+- Build a short, student-written website while learning the Unix shell, Git (safe workflows), Markdown, basic HTML/CSS/JS, and how to use AI tools responsibly.
 
 Quick start (first 5 minutes)
-
-1. Open this folder in VS Code (File → Open Folder) or run:
-
-```bash
-code .
-```
-
+1. Open this folder in VS Code (File → Open Folder) or run `code .` from the project root.
 2. Open the integrated terminal (View → Terminal).
-3. Confirm Git is installed:
-
-```bash
-git --version
-```
-
-4. Start Module 01: `modules/01-digital-literacy.md` and follow the exercises.
+3. Run `git --version` to confirm Git is installed.
+4. Start Module 01: `modules/01-digital-literacy.md` — follow the step-by-step exercises.
 
 What you'll build
-
-"What We Wish We Knew": an educational website with 8–10 student-authored articles, a simple interactive timeline, and a deployed static site (GitHub Pages or similar).
+- "What We Wish We Knew": a short educational website with 8–10 student-written articles, an interactive timeline, and a deployed static site.
 
 What you need
-
-- A laptop or desktop (macOS or Windows with WSL2 preferred)
+- A laptop or desktop (Windows with WSL2 or macOS recommended)
 - Internet access and VS Code (recommended)
-- No prior programming experience required — bring curiosity
+- Basic curiosity — no prior programming required
 
-Course length
-
-About 8–12 hours total (10 modules, ~30–60 minutes each). Use the modules in order.
-
-Modules (short summary)
-
-- Module 01 — Digital Literacy & First Content Creation (45–60m): write your first Markdown article.
-- Module 02 — Terminal Basics (30–45m): filesystem, commands, safety.
-- Module 03 — Markdown & VS Code (30–45m): editing and previewing Markdown.
-- Module 04 — Git Config & Initialize Repo (20–30m): set identity and make the first commit.
-- Module 05 — SSH Keys & GitHub Access (30–45m): keygen, add key, verify.
-- Module 06 — Add Remote & Push (20–30m): connect and push your repo.
-- Module 07 — Branching & Feature Workflow (30–40m): safe feature branches and PRs.
-- Module 08 — Stash, Reset, Revert & Recovery (40m): safe undo and recovery (reflog).
-- Module 09 — Collaboration: Pulls, Merges & Conflicts (30–45m): fetch, rebase, resolve conflicts.
-- Module 10 — Quick Deploy: Markdown to Site (30–60m): publish with GitHub Pages.
+Modules (10 short exercises, ~30–60 min each)
+- Module 01 — Digital Literacy & First Content Creation (45–60 min)
+- Module 02 — Terminal Basics (30–45 min)
+- Module 03 — Markdown & VS Code (30–45 min)
+- Module 04 — Git Config & Initialize Repo (20–30 min)
+- Module 05 — SSH Keys & GitHub Access (30–45 min)
+- Module 06 — Add Remote & Push (20–30 min)
+- Module 07 — Branching & Feature Workflow (30–40 min)
+- Module 08 — Stash, Reset, Revert & Recovery (40 min)
+- Module 09 — Collaboration: Pulls, Merges & Conflicts (30–45 min)
+- Module 10 — Quick Deploy: Markdown to Site (30–60 min)
 
 Need help or teaching notes
-
-- Teacher notes & troubleshooting: `TEACHER_NOTES.md`
-- Glossary & histories (Git, Linux): `GLOSSARY.md`
+- Teacher notes and troubleshooting: `TEACHER_NOTES.md`
+- Glossary & short histories (Git, Linux): `GLOSSARY.md`
 - One-page quick reference: `CHEAT_SHEET.md`
 
-Short classroom rules
-
-- Don't run destructive commands (e.g., `git reset --hard`) until Module 08.
-- Use a branch per article or change; push feature branches and open PRs for reviews.
-
-First 10 minutes (copyable)
-
-```bash
-cd path/to/this/repo   # replace with your folder path
-code .                # open VS Code
-git --version         # confirm git is available
-```
+Safety and classroom rules (short)
+- Do not run destructive commands (like `git reset --hard`) until Module 08 — recovery techniques are taught.
+- Use branches for work: create a feature branch for each article or change.
 
 If you're a teacher
-
-See `TEACHER_NOTES.md` for setup scripts, grading suggestions, and privacy options (private repos, org setup).
+- See `TEACHER_NOTES.md` for setup, grading workflow (PR-based), and bulk-creation tips.
 
 Start now
-
-Open `modules/01-digital-literacy.md` and complete the first short exercise. Welcome — you're about to start making things that matter.
+- Open `modules/01-digital-literacy.md` and complete the first short exercise. Welcome — you're making things that matter.
 
 - **Code prompts**: "Show me how to create an interactive timeline in HTML/CSS/JS"
 
