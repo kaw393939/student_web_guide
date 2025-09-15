@@ -38,6 +38,8 @@ Master the essential skill of version control and learn to collaborate using Git
 - GitHub collaboration and Pull Requests
 - Best practices for professional development
 
+**🎯 [Complete the Hands-On Git Assignment](git-assignment-1.md)** - Practice commits, resets, restores, and merging!
+
 ### 🌐 [Internet Technology & History](internet-technology.md)
 Understand how the internet works, its history, and the foundational technologies that power the web.
 
