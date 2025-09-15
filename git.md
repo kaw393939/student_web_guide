@@ -7,6 +7,8 @@
 - [Working with GitHub](#working-with-github)
 - [Git Workflows and Best Practices](#git-workflows-and-best-practices)
 - [Git Collaboration](#git-collaboration)
+- [🎯 **Hands-On Assignment 1: Git Fundamentals**](git-assignment-1.md) ⭐
+- [🎯 **Hands-On Assignment 2: Advanced Workflows**](git-assignment-2.md) ⭐⭐
 
 ---
 
@@ -508,7 +510,51 @@ git commit -m "Resolve merge conflict in header"
 
 ---
 
-## 🎯 Practice Exercises
+## 🎯 **HANDS-ON ASSIGNMENTS: Master Git Skills**
+
+### **[📋 Git Assignment 1: Fundamental Operations](git-assignment-1.md)**
+
+**Ready to put your Git knowledge into practice?** Complete our comprehensive hands-on assignment that covers:
+
+- ✅ **Repository Management** - Creating and managing Git repositories
+- ✅ **Commit Mastery** - Making meaningful commits and managing history
+- ✅ **Reset & Restore** - Undoing changes with soft/hard reset and restore
+- ✅ **Branching & Merging** - Working with branches and resolving conflicts
+- ✅ **Advanced History** - Exploring Git logs, blame, and grep
+
+**🕒 Time Required:** 2-3 hours  
+**📈 Difficulty:** Beginner to Intermediate  
+
+**👉 [Start Assignment 1 →](git-assignment-1.md)**
+
+### **[🚀 Git Assignment 2: Advanced Workflows](git-assignment-2.md)**
+
+**Take your Git skills to the professional level!** Master advanced workflows used in industry:
+
+- ✅ **Git Stash Mastery** - Temporarily save and restore work-in-progress
+- ✅ **Remote Repositories** - Multi-remote setups and collaboration
+- ✅ **GitFlow Strategy** - Feature, develop, release, and hotfix branches
+- ✅ **Team Collaboration** - Handling conflicts and team workflows
+- ✅ **Professional Practices** - Industry-standard development processes
+
+**🕒 Time Required:** 3-4 hours  
+**📈 Difficulty:** Intermediate to Advanced  
+**Prerequisites:** Complete Assignment 1 first
+
+**👉 [Start Assignment 2 →](git-assignment-2.md)**
+
+---
+
+Both assignments include:
+- Step-by-step instructions for every command
+- Real-world scenarios and problem-solving
+- Knowledge check questions throughout
+- Challenge exercises to test your skills
+- Complete deliverables and submission guides
+
+---
+
+## 🎯 Quick Practice Exercises
 
 ### Exercise 1: Create Your First Repository
 1. Create a new folder for a project
