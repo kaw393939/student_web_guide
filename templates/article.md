@@ -19,6 +19,10 @@ Write 300–600 words. Address:
 
 Sources: include 2 links under a **Sources** heading.
 
+Notes
+- `summary` should be ~20–30 words; keep it student-friendly and specific.
+- `image`, `image_alt`, and `image_credit` are optional for individual drafts but required when an image is included.
+
 Checklist before PR:
 - [ ] File saved in `articles/<slug>-<lastname>.md`
 - [ ] Front-matter filled correctly

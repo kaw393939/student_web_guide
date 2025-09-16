@@ -1,6 +1,6 @@
-# Modules 3 (Final 6-Module Plan)
+# Modules (Final 6-Module Plan)
 
-This folder contains the streamlined 6-module path that simulates a realistic developer workflow. It reuses ideas from `modules/` and `modules2/`, but each module here is re-scoped with clear outputs so the class ends with ~20 polished articles plus an index, with AI-generated images where appropriate.
+This folder contains the streamlined 6-module path that simulates a realistic developer workflow. It reuses earlier ideas, but each module here is re-scoped with clear outputs so the class ends with ~20 polished articles plus an index, with AI-generated images where appropriate.
 
 - Module 01 — Setup, First Article, Git Basics
 - Module 02 — Individual Feature Workflow (Branches, PRs)

@@ -8,8 +8,7 @@ reading_time: 5
 image: images/student-ada/arpanet-v1.jpg
 image_alt: "Diagram of packet routes between four nodes"
 image_credit: "AI-generated image (prompt: 'educational schematic of early packet-switched network')"
-sources:
-  - "https://example.edu/arpanet-history"
+summary: "Packet switching split messages into packets that could route around failures, enabling resilient networks; this laid groundwork for today’s internet and reliable services."
 ---
 
 # How Packet Switching Made the Internet Possible
