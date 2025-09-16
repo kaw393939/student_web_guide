@@ -37,7 +37,7 @@ Mapping (Git ↔ Video editing)
 Teacher script (copyable)
 > "Think of your project as a movie. Every time you commit you save a frame. You can scrub these frames, create alternate cuts on branches, and merge the best parts into the final edit. If something looks wrong, you can rewind or make a backup branch before trying risky changes."
 
-One-minute classroom activity (drop-in for Module 07 or 08)
+One-minute classroom activity (drop-in after Module 04)
 1. Two students edit the same paragraph in a shared file, each on their own branch (`feature/A`, `feature/B`) and commit their changes.
 2. Show `git log --oneline --graph` to visualize the timeline.
 3. Merge `feature/A` into `main` locally, then merge `feature/B` to produce a conflict. Resolve the conflict together — explain this as combining two cuts.

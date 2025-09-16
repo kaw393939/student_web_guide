@@ -29,7 +29,8 @@ Git common
 - git pull --rebase origin main — update local branch safely
 
 Safety & undo
-- git stash save "wip" — save unfinished work temporarily
+- git stash push -m "wip" — save unfinished work temporarily
+- git stash push -u -m "wip" — include untracked files in stash
 - git stash list
 - git stash pop — restore last stash
 - git revert <sha> — create a new commit that undoes <sha> (safe for shared branches)

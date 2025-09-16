@@ -2,6 +2,13 @@
 
 A classroom-ready guide for phone-native beginners to learn the terminal, Git, Markdown, and realistic collaboration workflows while producing a student-authored site. The class ends with roughly 20 polished pages plus an index, with AI-generated illustrations used responsibly.
 
+## ⚡️ At a glance
+- What you’ll build: ~20 curated, student-written articles plus a simple index; optional AI images with alt text and credits.
+- How you’ll work: small feature branches → PRs → peer/instructor review → squash merge to a protected `main`; recovery toolkit (stash/reset/revert/reflog) taught early.
+- Start here:
+	- Students: open [`modules/01-setup-first-article.md`](modules/01-setup-first-article.md) and copy [`templates/article.md`](templates/article.md) to `articles/m01-arpanet-<lastname>.md`.
+	- Instructors: skim [`TEACHER_NOTES.md`](TEACHER_NOTES.md), enable branch protection on `main`, require PR reviews; see Deployment below for GitHub Pages.
+
 Who this is for
 - High school or intro college classes with mixed devices (macOS, Windows/WSL, Linux)
 - Teachers who prefer PR-based grading and reproducible workflows
@@ -15,27 +22,24 @@ Outcomes (skills)
 - Markdown authoring with images and links; accessibility (alt text)
 - Team workflows: forks, conflicts, reviews, and release/deploy basics
 
-Repository structure (current)
-- [`modules/`](modules/) — 10 short modules (student track)
+## Repository structure (current)
+- [`modules/`](modules/) — Final 6-module plan (student track)
 - [`templates/`](templates/) — article and index scaffolds
 - [`.github/PULL_REQUEST_TEMPLATE.md`](.github/PULL_REQUEST_TEMPLATE.md) — PR template
 - [`PR_CHECKLIST.md`](PR_CHECKLIST.md) — self-review checklist to paste into PRs
 - [`TEACHER_NOTES.md`](TEACHER_NOTES.md) — troubleshooting and classroom guidance
 - [`CHEAT_SHEET.md`](CHEAT_SHEET.md) — 1-page terminal/Git cheat sheet
 - [`GIT_NINJA.md`](GIT_NINJA.md) — advanced Git (metaphor + recovery)
+- [`GLOSSARY.md`](GLOSSARY.md) — terms and quick definitions
 - [`reports/`](reports/) — [`team-report-template.md`](reports/team-report-template.md) (final team reflection)
 
-Course modules (10)
-- 01 — Digital Literacy & Setup: [`modules/01-digital-literacy.md`](modules/01-digital-literacy.md)
-- 02 — Terminal Basics: [`modules/02-terminal-basics.md`](modules/02-terminal-basics.md)
-- 03 — Markdown & VS Code: [`modules/03-markdown-vscode.md`](modules/03-markdown-vscode.md)
-- 04 — Git Config & Init: [`modules/04-git-config-init.md`](modules/04-git-config-init.md)
-- 05 — Git over SSH: [`modules/05-git-ssh.md`](modules/05-git-ssh.md)
-- 06 — Remote & Push: [`modules/06-remote-push.md`](modules/06-remote-push.md)
-- 07 — Branching & PRs: [`modules/07-branching-workflow.md`](modules/07-branching-workflow.md)
-- 08 — Stash/Reset/Recovery: [`modules/08-stash-reset-recovery.md`](modules/08-stash-reset-recovery.md)
-- 09 — Collaboration & Conflicts: [`modules/09-collaboration-conflicts.md`](modules/09-collaboration-conflicts.md)
-- 10 — Deploy: [`modules/10-deploy.md`](modules/10-deploy.md)
+Course modules (6)
+- 01 — Setup, First Article, Git Basics: [`modules/01-setup-first-article.md`](modules/01-setup-first-article.md)
+- 02 — Individual Feature Workflow: [`modules/02-individual-feature-workflow.md`](modules/02-individual-feature-workflow.md)
+- 03 — Recovery Toolkit: [`modules/03-recovery-toolkit.md`](modules/03-recovery-toolkit.md)
+- 04 — Solo PR Practice (Remote, Push, Review): [`modules/04-solo-pr-practice.md`](modules/04-solo-pr-practice.md)
+- 05 — Team GitFlow (Forks, Conflicts, Integration): [`modules/05-team-gitflow-conflicts.md`](modules/05-team-gitflow-conflicts.md)
+- 06 — Advanced Collaboration (Issues, Releases, Deploy): [`modules/06-advanced-collab-release.md`](modules/06-advanced-collab-release.md)
 
 Target deliverables (~20 pages)
 - Individual drafts (curated): 3–4 per student across early modules
@@ -63,8 +67,10 @@ Quickstart — students (first 10 minutes)
 1) Open this repo in VS Code and the integrated terminal
 2) Confirm Git: `git --version`
 3) Create a feature branch for your first article
-4) Copy `templates/article.md` to `articles/m01-arpanet-<lastname>.md`
+4) Copy `templates/article.md` to `articles/m01-arpanet-<lastname>.md` (see example in `templates/article-example.md`)
 5) Commit and push; open a Draft PR; request 1 peer
+ 
+Tip: If a term is unfamiliar, check the [`GLOSSARY.md`](GLOSSARY.md).
 
 Recommended flow (high level)
 - Research → write draft in Markdown → commit to a branch → open PR → peer suggestions → revise → merge
@@ -75,14 +81,22 @@ Assessment & review (suggested)
 - Enforce front-matter completeness, working links, and alt text for any images
 - Prefer squash merges to keep history tidy
 
+Teacher setup (quick checklist)
+- Protect `main` and require PR reviews before merge
+- Use the PR template and `PR_CHECKLIST.md` for grading
+- Form 3–4 person teams by Module 05 and assign roles (Author, Editor, Reviewer, Integrator)
+
 Deployment (optional but encouraged)
 - Enable GitHub Pages on the main (or docs) branch after the final integration
-- Build an `index.md` using `templates/index.md` and link all curated pages with one-line summaries
+- Build an `index.md` using [`templates/index.md`](templates/index.md) and link all curated pages with one-line summaries
 
 Troubleshooting & recovery
 - Use `CHEAT_SHEET.md` for quick commands
 - Use `GIT_NINJA.md` for advanced flows and the “Git as Video Editing” metaphor
 - For safe undo: prefer `git revert` on shared branches; practice `stash/reset/reflog` on a backup branch first
+
+Helpful background reading
+- ARPANET background (student-friendly): [resources/arpanet-background.md](resources/arpanet-background.md)
 
 Contributing rules (students)
 - Keep changes focused per PR (one page/feature)
@@ -99,5 +113,5 @@ Attribution & classroom safety
 - When in doubt, summarize in your own words and cite the source link
 
 Next steps
-- New learners: open `modules/01-digital-literacy.md` and start your first draft
+- New learners: open `modules/01-setup-first-article.md` and start your first draft
 - Instructors: scan `TEACHER_NOTES.md` and the templates folder, then set branch protection and review requirements
